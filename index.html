@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <div>
+        <label for="Nombre">Nombre</label>
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          required
+        />
+      </div>
+      <div>
+        <label for="Apellido">Apellido</label>
+        <input
+          type="text"
+          placeholder="Ingrese su Apellido"
+          required
+        />
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="color" 
+        required/>
+      </div>
+      <div>
+        <label for="Edad">Edad</label>
+        <input type="number" placeholder="ingrese su Edad"
+        required />
+      </div>
+      <div>
+        <label for="Nombre">Numeros</label>
+        <input type="text" 
+        placeholder="Ingrese un numero" 
+        pattern="[0-9]+$"
+        required />
+      </div>
+      <div>
+        <label for="positivos">positivos</label>
+        <input type="number" 
+        placeholder="ingrese un numero positivo" 
+        min="1"
+        required />
+      </div>
+      <div>
+        <label for="Maximo-minimo">Maximo-minimo</label>
+        <input
+          type="number"
+          step="0.5"
+          max="20"
+          min="10"
+          value="15"
+          required
+          placeholder="ingrese un numero"
+          required
+        />
+      </div>
+      <div>
+        <label for="date">Fecha de nacimiento</label>
+        <!--INGRESE LA FECHA DE NACIMIENTO-->
+        <input type="date"
+        required />
+      </div>
+      <div>
+        <label for="time">Hora</label>
+        <!--INGRESE LA FECHA-->
+        <input type="time" 
+        required/>
+      </div>
+      <div>
+        <label for="ciudad">Seleccione la ciudad</label>
+        <select name="ciudad" id="ciudad">
+          <option value="" seleccione></option>
+          <option value="1">Giron</option>
+          <option value="2">Bucaramanga</option>
+          <option value="3">Piedecuesta</option>
+          <option value="4">Floridablanca</option>
+        </select>
+      </div>
+      <div>
+        <label for="Genero">Seleccione el Genero</label>
+        <select name="Genero" id="Genero">
+          <option value="" seleccione></option>
+          <option value="1">Femenino</option>
+          <option value="2">Masculino</option>
+          <option value="3">Otro</option>
+        </select>
+      </div>
+<div>
+        <label for="Materias">Seleccione las materias</label>
+        <select name="Materias" id="Materias">
+          <option value="" seleccione></option>
+          <option value="1">HTML</HTML></option>
+          <option value="2">CSS</option>
+          <option value="3">JS</option>
+          <option value="4">JAVA</option>
+          <option value="5">PYTHON</option>
+          <option value="6">PHP</option>
+        </select>
+      </div>
+      <div>
+          <label for="file">Archivo</label>
+          <input type="file" 
+          accept=".jpg" 
+          accept=".png"/>
+        </div>
+      <div>
+          <label for="contrasena">Contraseña</label>
+          <input type="password" 
+          placeholder="contraseña" 
+          id="contrasena" />
+        </div>
+        <div>
+          <label for="aprendiz">Aprendiz-Sol Angy Valentina Serrano Quintero</label>
+        </div>
+      <button type="submit">Validar Formulario</button>
+    </form>
+  </body>
+</html>
